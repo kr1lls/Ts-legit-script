@@ -178,7 +178,6 @@ hud.Ammo:Destroy()
 wait(1)
 CustomAmmoUI()	
 end)
-
 --This script reveals ALL hidden messages in the default chat
 --chat "/spy" to toggle!
 enabled = true
