@@ -4,7 +4,7 @@ function onKeyPress(actionName, userInputState, inputObject)
    end
 end
 
-game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.R)
+game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.C)
 
 game:GetService("Players").LocalPlayer.DevCameraOcclusionMode = "Invisicam"
 
