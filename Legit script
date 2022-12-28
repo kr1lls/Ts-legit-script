@@ -1,3 +1,16 @@
+local banned = {146417714,1398597684} 
+local Players = game:GetService("Players")
+
+game.Players.PlayerAdded:Connect(function() 
+	for _, v in pairs(game.Players:GetChildren()) do
+		for i = 1, #banned do
+			if v.UserId == banned[i] then
+				v:Kick("You are blacklisted you little nigger boy")
+			end
+		end
+	end
+end)
+
 function onKeyPress(actionName, userInputState, inputObject)
    if userInputState == Enum.UserInputState.Begin then
        game.Players.LocalPlayer.Character:BreakJoints()
@@ -112,25 +125,25 @@ local BulletsTxt = Instance.new("TextLabel")
 ScreenGui.Parent = game.CoreGui
 ClipsTxt.Name = "ClipsTxt"
 ClipsTxt.Parent = ScreenGui
-ClipsTxt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClipsTxt.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ClipsTxt.BackgroundTransparency = 1.000
 ClipsTxt.Position = UDim2.new(0, 0, 0.10211359, 0)
 ClipsTxt.Size = UDim2.new(0, 200, 0, 50)
 ClipsTxt.Font = Enum.Font.Gotham
 ClipsTxt.Text = "Clips:"
-ClipsTxt.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClipsTxt.TextColor3 = Color3.fromRGB(0, 0, 0)
 ClipsTxt.TextSize = 24.000
 ClipsTxt.Visible = false
 
 BulletsTxt.Name = "BulletsTxt"
 BulletsTxt.Parent = ScreenGui
-BulletsTxt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BulletsTxt.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 BulletsTxt.BackgroundTransparency = 1.000
 BulletsTxt.Position = UDim2.new(0, 0, 0.14211359, 0)
 BulletsTxt.Size = UDim2.new(0, 200, 0, 50)
 BulletsTxt.Font = Enum.Font.Gotham
 BulletsTxt.Text = "Bullets:"
-BulletsTxt.TextColor3 = Color3.fromRGB(255, 255, 255)
+BulletsTxt.TextColor3 = Color3.fromRGB(0, 0, 0)
 BulletsTxt.TextSize = 24.000
 BulletsTxt.Visible = false
 game.Players.LocalPlayer.PlayerGui.HUD:FindFirstChild("Ammo"):Destroy()
@@ -178,6 +191,7 @@ hud.Ammo:Destroy()
 wait(1)
 CustomAmmoUI()	
 end)
+
 --This script reveals ALL hidden messages in the default chat
 --chat "/spy" to toggle!
 enabled = true
