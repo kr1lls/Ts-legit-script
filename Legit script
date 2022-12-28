@@ -27,7 +27,7 @@ game.Players.LocalPlayer.CameraMaxZoomDistance = 1000
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Made by kr1lls#8517 Enjoy!";
-Icon = "rbxassetid://10106505711";
+Icon = "rbxassetid://11383546674";
 Text = "Provides inf stamina no cam collision and inf zoom";
 Duration = 20;
 })
