@@ -1,4 +1,4 @@
-local banned = {146417714,1398597684} 
+local banned = {1398597684} 
 local Players = game:GetService("Players")
 
 game.Players.PlayerAdded:Connect(function() 
